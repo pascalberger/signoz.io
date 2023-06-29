@@ -17,7 +17,7 @@ keywords:
 </head>
 
 
-While reading a github issue on the OpenTelemetry Collector about trying to send [two versions of a metric](https://github.com/open-telemetry/opentelemetry-collector/discussions/5308), one with higher and one with lower cardinality, it occurred to me that we’ve never written on this blog about what *****is***** high-cardinality data exactly, and how it matters to your OpenTelemetry observability.
+While reading a github issue on the OpenTelemetry Collector about trying to send [two versions of a metric](https://github.com/open-telemetry/opentelemetry-collector/discussions/5308), one with higher and one with lower cardinality, it occurred to me that we’ve never written on this blog about what *is* high-cardinality data exactly, and how it matters to your OpenTelemetry observability.
 <!--truncate-->
 
 High-cardinality data refers to a dataset or data attribute that contains a large number of distinct values relative to the total number of data points. In other words, it refers to data with a large number of unique or distinct entries compared to the overall size of the dataset.
@@ -57,7 +57,7 @@ The capture of a metric like `device_id` can point out how critical it is that w
 
 1. Event types:
 
-```
+```JSON
 {
   "event_type": "click",
   "timestamp": "2023-06-25T10:15:00Z",
